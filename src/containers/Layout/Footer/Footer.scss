@@ -1,0 +1,77 @@
+@import '../../Layout/style/Variables.scss';
+
+.footer-container {
+    float: left;
+    width: 100%;
+
+    & .footer {
+        float: left;
+        width: 100%;
+        min-height: 120px;
+
+        & .sep {
+            margin: 0 7px;
+        }
+
+        & .language-selector {
+            display: none;
+        }
+
+        & .footer-link {
+            color: #fff;
+            text-decoration: none;
+            line-height: 60px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        & .all-rights-reserved {
+            color: #fff;
+            line-height: 60px;
+        }
+
+        & .version {
+            float: left;
+            width: 100%;
+            color: #656565;
+            line-height: 34px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: $MOBILE_BREAKPOINT) {
+    .footer-container {
+        & .footer {
+            padding-top: 20px;
+            font-weight: bold;
+            text-align: center;
+
+            & .sep {
+                display: none;
+            }
+
+            & .language-selector {
+                display: inline-block;
+                float: none;
+            }
+
+            & .right {
+                width: 100%;
+            }
+
+            & .footer-link {
+                float: left;
+                width: 100%;
+                line-height: 24px;
+            }
+
+            & .all-rights-reserved {
+                float: left;
+                width: 100%;
+                text-align: center !important;
+            }
+        }
+    }
+}

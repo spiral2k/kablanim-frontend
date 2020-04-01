@@ -1,0 +1,7 @@
+export default {
+    SET_GLOBAL_LOADER: 'SET_GLOBAL_LOADER',
+    SET_LANG: 'SET_LANG',
+    SET_RTL: 'SET_RTL',
+    SET_POPUP: 'SET_POPUP',
+    RESET_UI: 'RESET_UI'
+};

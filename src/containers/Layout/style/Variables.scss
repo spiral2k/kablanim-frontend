@@ -1,0 +1,12 @@
+@import './Functions.scss';
+
+$IMAGES_PATH: get-image-path();
+
+//Break Points
+$MOBILE_BREAKPOINT: 768px;
+$TABLET_BREAKPOINT: 1024px;
+$NARROW_BREAKPOINT: 1480px;
+
+@function setImage($image) {
+    @return '../assets/images/' + $image;
+}

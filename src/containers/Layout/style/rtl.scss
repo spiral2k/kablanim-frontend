@@ -1,0 +1,11 @@
+.contractor-dashboard {
+    &.rtl {
+        & .left {
+            float: right;
+        }
+
+        & .right {
+            float: left;
+        }
+    }
+}

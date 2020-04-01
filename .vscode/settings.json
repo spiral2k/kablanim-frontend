@@ -1,0 +1,8 @@
+{
+	"editor.detectIndentation": false,
+    "editor.formatOnSave": true,
+	"editor.fontFamily": "monospace",
+	"editor.fontSize": 14,
+	"editor.renderWhitespace": "all",
+	"editor.fontLigatures": true
+}

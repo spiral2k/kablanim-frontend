@@ -1,0 +1,38 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "entry"
+            }
+        ],
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime",
+        "@babel/plugin-transform-async-to-generator",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-syntax-dynamic-import",
+        [
+            "module-resolver",
+            {
+                "root": ["./"],
+                "alias": {
+                    "@root": ".",
+                    "@src": "./src/",
+                    "@components": "./src/components",
+                    "@containers": "./src/containers",
+                    "@style": "./src/containers/Layout/style",
+                    "@api": "./src/api",
+                    "@config": "./config",
+                    "@constants": "./src/constants",
+                    "@helpers": "./src/helpers",
+                    "@utils": "./src/helpers/utils",
+                    "@redux": "./src/redux",
+                    "@reducers": "./src/redux/reducers"
+                }
+            }
+        ]
+    ]
+}

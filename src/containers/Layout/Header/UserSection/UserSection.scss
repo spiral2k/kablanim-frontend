@@ -1,0 +1,55 @@
+@import '../../style/Variables.scss';
+
+
+.clalit-user-section {
+    padding: 10px 0;
+}
+
+.user-section-container {
+    float: right;
+    line-height: 68px;
+
+    & .email-address {
+        direction: ltr;
+        max-width: 230px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: right;
+    }
+
+    & .logout {
+        border: 0;
+        background: #fff;
+        color: #1699fc;
+    }
+}
+
+.ask-for-account {
+    float: right;
+    color: #2f94e0;
+    font-size: 21px;
+    line-height: 70px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: $MOBILE_BREAKPOINT) {
+    .clalit-user-section {
+        width: 150px;
+        margin-top: 12px;
+    }
+
+    .user-section-container {
+        & .email-address {
+            width: 130px;
+        }
+    }
+
+    .ask-for-account {
+        font-size: 16px;
+    }
+}

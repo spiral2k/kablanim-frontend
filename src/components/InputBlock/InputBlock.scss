@@ -1,0 +1,81 @@
+@import '../../containers/Layout/style/Variables.scss';
+
+.rtl {
+    & .input-block-label {
+        left: auto;
+        right: 20px;
+    }
+
+    & .input-block {
+        &.success {
+            &::before {
+                left: 10px;
+                right: auto;
+            }
+        }
+    }
+}
+
+.input-block {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+
+    & .input-block-label {
+        position: absolute;
+        left: 20px;
+        top: 15px;
+        z-index: 1;
+        color: rgba(0, 0, 0, 0.6);
+        transition: transform 150ms ease-out, font-size 150ms ease-out;
+        font-size: 20px;
+    }
+
+    &.focus .input-block-label,
+    &.has-value .input-block-label {
+        transform: translateY(-65%);
+        font-size: 14px;
+        color: #000;
+    }
+
+    &.has-value .input {
+        color: #000;
+        font-weight: 400;
+    }
+
+    &.focus .input-block-label {
+        color: #1d7dd3;
+    }
+
+    &.focus .input {
+        border: 2px solid #1d7dd3;
+        padding: 15px 19px 2px 21px;
+    }
+
+    & .input {
+        width: 100%;
+    }
+
+    &.success {
+        &::before {
+            content: '';
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            // background-image: url(setImage('/icon-checkmark_green.svg'));
+            background-repeat: no-repeat;
+            top: 20px;
+            right: 10px;
+            z-index: 1;
+        }
+    }
+
+    & .instructions {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,24 @@
+.general-error {
+    & .q-m {
+        background-color: #e8002a;
+        border-radius: 50%;
+        padding: 18px;
+        width: 80px;
+    }
+
+    & .content {
+        float: left;
+        width: 100%;
+        padding-bottom: 70px;
+        & .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0 10px 0;
+        }
+
+        & .text {
+            font-size: 22px;
+        }
+    }
+
+}
